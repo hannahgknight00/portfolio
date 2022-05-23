@@ -1,0 +1,34 @@
+header {
+	border-color: #FF0000;
+	border-width: 1px;
+	float: left;
+}
+
+nav {
+	border-color: #FF0000;
+	border-width: 1px;
+	float: left;
+}
+
+#portfolio {
+	border-color: #00FF00;
+	border-width: 1px;
+	float: right;
+}
+
+#about {
+	border-color: #00FF00;
+	border-width: 1px;
+	float: right;
+}
+
+#contact {
+	border-color: #00FF00;
+	border-width: 1px;
+	float: right;
+}
+
+footer {
+	border-color: #0000FF;
+	border-width: 1px;
+}
