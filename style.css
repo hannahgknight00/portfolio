@@ -52,6 +52,8 @@ body {
 /* Behaviors of the inner elements of the left column, which is used for navigation. */
 #left-div * { /*Text behavior in the left column defined for all *children. */
 	text-align: right;
+	font-family: Verdana, sans-serif;
+	font-variant: small-caps;
 	color: #EFEFEF;
 }
 
@@ -114,7 +116,7 @@ nav > ul > li a:hover {
 	}
 }
 
-@media screen and (min-width: 801px) {
+@media screen and (min-width: 801px) { /* Defining navigation behavior on traditional wide displays. */
 	#left-div {
 		background-image: linear-gradient(to bottom, #65698E 30%, #454861 90%);
 	}
@@ -133,63 +135,107 @@ nav > ul > li a:hover {
 
 
 
-
-
-
-
-
-
-
-
 /* Primary body sections CSS */
-
-#portfolio {
+#portfolio { /* Establishing flex behavior for the portfolio elements */
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
 }
 
-#portfolio > p {
-	border: 1px solid black;
-	width: 29%;
-	margin: 0 1.6% 20px 1.6%;
+/* CSS for the portfolio section of the primary body */
+#portfolio > img { /*Establishing image behavior on wide-screen */
+	width: 32.9%;
+}
+#portfolio > img:hover {
+	filter: brightness(1.25);
+}
+@media screen and (max-width: 1200px) { /* Middle screen width */
+	#portfolio > img {
+		width: 49.5%;
+	}
+}
+@media screen and (max-width: 800px) { /* Narrow or smartphone */
+	#portfolio > img {
+		width: 100%;
+	}
 }
 
-@media screen and (max-width: 1200px) {
-	#portfolio > .portfolio-element {
-		width: 44%;
-		margin: 0 2.45% 20px 2.45%;
-	}
+/* Css for the about section of the primary body */
+#about {
+	background-color: #EFEFEF;
+	text-align: center;
+	padding: 0 20% 0 20%;
+}
+
+#about h1 {
+	font-family: Verdana, sans-serif;
+	font-variant: small-caps;
+	padding: 0 0 5px 0;
+	color: #5555DD;
+	font-size: 2em;
+}
+
+#about p {
+	font-family: Verdana, sans-serif;
+	color: #1111AA;
+	font-size: 0.9em;
+}
+
+#about a {
+	text-decoration: none;
+}
+
+#about img {
+	width: 100%;
+	margin-bottom: 2%;
+}
+
+#about ul {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+#about li {
+	background-color: #b2b4c6;
+	padding: 5px 20px 5px 20px;
+	margin: 3%;
+	text-align: center;
+}
+#about li:hover {
+	background-color: #9e93af;
 }
 
 @media screen and (max-width: 800px) {
-	#portfolio > .portfolio-element {
-		width: 88%;
-		margin: 0 4.9% 20px 4.9%;
+	#about {
+		padding: 0 10% 0 10%;
 	}
 }
 
-#about {
-	background-color: #00FF00;
-	text-align: center;
-	padding: 3px 0 3px 0;
+#skills p {
+	text-align: left;
 }
 
-#about > * {
-	padding: 3px 0 3px 0;
 
-	display: flex;
-	justify-content: center;
-}
 
-#about > ul > li {
-	width: 100px;
-}
+
+
+
 
 #contact {
 	padding: 3px 0 3px 0;
 	text-align: center;
 }
+
+
+
+
+
+
+
+
+
+
+
 
 /* Footer-related */
 footer {
