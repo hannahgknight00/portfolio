@@ -1,0 +1,62 @@
+* {
+	font-family: Verdana, sans-serif;
+}
+
+p {
+	font-size: 1em;
+}
+
+h3 {
+	font-size: 1.25em;
+	margin-left: 67.90%;
+	margin-top: -1.24%;
+	text-align: center;
+	display: block;
+	border: 1px solid black;
+	width: 33%;
+}
+
+header {
+	font-size: 1.75em;
+	display: flex;
+	justify-content: center;
+}
+
+#bodydiv {
+	border: 1px solid #00ff00;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	padding: 0;
+	margin: 0;
+}
+
+.bodyelement {
+	border: 1px solid #ff0000;
+	background-color: #FFFFDD;
+}
+
+@media (min-width: 992px) { /* Desktop mode */
+	.bodyelement {
+		width: 31%;
+		padding: .33%;
+		margin: .33%;
+	}
+}
+
+@media (max-width: 991px) and (min-width: 768px) { /* Tablet mode */
+	.bodyelement {
+		width: 46.5%;
+		padding: .5%;
+		margin: .5%;
+	}
+}
+
+@media (max-width: 767px) { /* Mobile mode */
+	.bodyelement {
+		width: 93%;
+		padding: 1%;
+		margin: 1%;
+	}
+}

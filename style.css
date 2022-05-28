@@ -52,6 +52,7 @@ body {
 /* Behaviors of the inner elements of the left column, which is used for navigation. */
 #left-div * { /*Text behavior in the left column defined for all *children. */
 	text-align: right;
+	font-size: 1em;
 	font-family: Verdana, sans-serif;
 	font-variant: small-caps;
 	color: #EFEFEF;
