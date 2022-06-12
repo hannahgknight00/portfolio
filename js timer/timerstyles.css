@@ -1,0 +1,42 @@
+body {
+	background-color: #AAEEC4;
+}
+
+section * {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin-bottom: 10px;
+}
+
+section > * {
+	width: 98%;
+}
+
+h1 {
+	font-size: 4em;
+	color: #88CC91;
+}
+
+button {
+	margin-left: 10px;
+	margin-right: 10px;
+	padding: 4px;
+
+	width: 120px;
+	height: 40px;
+
+	background-color: #88CC91;
+	border-radius: 5px;
+	border: 2px solid #88CC91;
+
+	font-size: 1.5em;
+	color: #66AA70;
+}
+
+button:hover {
+	background-color: #77BB80;
+	border: 2px solid #77BB80;
+
+	color: #559960;
+}
