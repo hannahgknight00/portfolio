@@ -1,0 +1,28 @@
+@keyframes bgblink {
+	0% {
+		background-color: #FF0000;
+	} 12.5% {
+		background-color: #FFA500;
+	} 25% {
+		background-color: #FFFF00;
+	} 37.5% {
+		background-color: #00FF00;
+	} 50% {
+		background-color: #00FFFF;
+	} 62.5% {
+		background-color: #0000FF;
+	} 75% {
+		background-color: #fb0082;
+	} 87.5% {
+		background-color: #ee82ee;
+	} 100% {
+		background-color: #FF0000;
+	}
+}
+
+body {
+	animation-name: bgblink;
+	animation-duration: 10s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
